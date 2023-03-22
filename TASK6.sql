@@ -103,5 +103,5 @@ where purch_amt between 500 and 2000
 --From the above tables write a SQL query to display the customer name, customer city, grade, salesman, salesman city. The results should be sorted by ascending customer_id.
 select cust_name,cus.city,cus.grade,sm.name,sm.city from salesman as sm
 inner join customer as cus
-on cus.city=sm.city
+on cus.salesman_id=sm.salesman_id
 order by customer_id
