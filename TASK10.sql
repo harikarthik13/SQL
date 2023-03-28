@@ -70,7 +70,7 @@ where e.salary between m.sal and 2500
 
 
 
-select * from employees where SALARY between (select min(salary) from employees) and  
+
 
 
 
